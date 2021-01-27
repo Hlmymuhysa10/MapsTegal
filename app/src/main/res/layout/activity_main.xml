@@ -1,68 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="134dp"
-        android:layout_height="50dp"
-        android:text="Anak 1"
-        android:background="#FF0000"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="134dp"
-        android:layout_height="50dp"
-        android:text="Anak 2"
-        android:background="#0000FF"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="134dp"
-        android:layout_height="50dp"
-        android:text="Anak 3"
-        android:background="#A52A2A"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="80dp"
+     android:background="@color/colorPrimaryDark"
+     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="134dp"
-            android:layout_height="50dp"
-            android:text="Anak 4"
-            android:background="#00ff00"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="134dp"
-            android:layout_height="50dp"
-            android:text="Anak 5"
-            android:background="#ADD8E6"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="134dp"
-            android:layout_height="50dp"
-            android:text="Anak 6"
-            android:background="#FFFF00"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-        android:textStyle="bold"
-        android:gravity="center"/>
-    </LinearLayout>
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="90dp"
+      android:text="Welcome"
+      android:textStyle="bold"
+      android:textColor="#000000"
+      android:layout_gravity="center"
+      android:textSize="60dp"/>
 
 
-</LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/map"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/search"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/compass"/>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/download"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/Maps"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/address"/>
+
+
+
+   </LinearLayout>
+  </LinearLayout>
+
+ </LinearLayout>
+
+
+
+</RelativeLayout>
